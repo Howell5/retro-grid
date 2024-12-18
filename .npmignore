@@ -1,0 +1,11 @@
+src
+public
+index.html
+*.config.js
+*.config.ts
+.gitignore
+.git
+node_modules
+.vscode
+.idea
+*.log

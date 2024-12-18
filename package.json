@@ -2,6 +2,11 @@
   "name": "vue-retro-grid",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "howell5",
+    "email": "howell5@outlook.com",
+    "url": "https://github.com/howell5"
+  },
   "version": "1.0.0",
   "main": "./dist/vue-retro-grid.umd.js",
   "module": "./dist/vue-retro-grid.es.js",
@@ -9,10 +14,31 @@
   "files": [
     "dist"
   ],
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "grid",
+    "background",
+    "retro",
+    "component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vue-retro-grid"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-retro-grid.js",
+      "require": "./dist/vue-retro-grid.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
+    "release": "release-it",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
@@ -24,6 +50,7 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^9.0.3",
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.10.2",
     "@vitejs/plugin-vue": "^5.2.1",
@@ -38,9 +65,11 @@
     "oxlint": "^0.11.0",
     "postcss": "^8.4.49",
     "prettier": "^3.3.3",
+    "release-it": "^17.10.0",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.6.3",
     "vite": "^6.0.3",
+    "vite-plugin-dts": "^4.3.0",
     "vite-plugin-vue-devtools": "^7.6.5",
     "vue-tsc": "^2.1.10"
   }
