@@ -29,8 +29,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/vue-retro-grid.js",
-      "require": "./dist/vue-retro-grid.umd.cjs"
+      "import": "./dist/vue-retro-grid.umd.js",
+      "require": "./dist/vue-retro-grid.es.js"
     }
   },
   "scripts": {
