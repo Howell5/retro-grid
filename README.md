@@ -36,7 +36,6 @@ import { RetroGrid } from '@howell5/retro-grid'
 
 | Prop           | Type   | Default              | Description                                           |
 | -------------- | ------ | -------------------- | ----------------------------------------------------- |
-| className      | string | ''                   | Additional CSS classes                                |
 | angle          | number | 65                   | Grid angle in degrees                                 |
 | lineColor      | string | 'rgba(0, 0, 0, 0.3)' | Grid line color (dark mode: rgba(255, 255, 255, 0.2)) |
 | glowSize       | number | 0                    | Glow effect size in pixels                            |
