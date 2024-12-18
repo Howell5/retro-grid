@@ -120,7 +120,6 @@ const themes = ['cyberpunk', 'matrix', 'vaporwave', 'classic', 'midnight'] as co
 const selectedTheme = ref<(typeof themes)[number]>('cyberpunk')
 const customMode = ref(false)
 
-// 自定义模式的控制值
 const angle = ref(65)
 const glowSize = ref(5)
 const opacity = ref(0.5)
@@ -128,7 +127,6 @@ const lineColor = ref('#ff00ff')
 const bgGradientFrom = ref('#140028')
 const bgGradientTo = ref('#000000')
 
-// 新增: 颜色转换函数
 function convertToRGBA(hex: string, opacity: number): string {
   const r = parseInt(hex.slice(1, 3), 16)
   const g = parseInt(hex.slice(3, 5), 16)
