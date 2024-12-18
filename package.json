@@ -7,7 +7,7 @@
     "email": "howell5@outlook.com",
     "url": "https://github.com/howell5"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "./dist/vue-retro-grid.umd.js",
   "module": "./dist/vue-retro-grid.es.js",
   "types": "./dist/types/index.d.ts",
