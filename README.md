@@ -1,5 +1,9 @@
 # Retro Grid
 
+[![npm version](https://img.shields.io/npm/v/@howell5/retro-grid.svg)](https://www.npmjs.com/package/@howell5/retro-grid)
+[![npm downloads](https://img.shields.io/npm/dm/@howell5/retro-grid.svg)](https://www.npmjs.com/package/@howell5/retro-grid)
+[![license](https://img.shields.io/npm/l/express.svg)]()
+
 A customizable retro grid background component for Vue 3 with built-in themes and advanced customization options.
 
 ## Features
