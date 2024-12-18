@@ -1,4 +1,4 @@
-# Vue Retro Grid
+# Retro Grid
 
 A simple and customizable retro grid background component for Vue 3.
 
@@ -13,11 +13,11 @@ A simple and customizable retro grid background component for Vue 3.
 ## Installation
 
 ```bash
-npm install vue-retro-grid
+npm install @howell5/retro-grid
 # or
-pnpm add vue-retro-grid
+pnpm add @howell5/retro-grid
 # or
-yarn add vue-retro-grid
+yarn add @howell5/retro-grid
 ```
 
 ## Basic Usage
@@ -28,7 +28,7 @@ yarn add vue-retro-grid
 </template>
 
 <script setup>
-import { RetroGrid } from 'vue-retro-grid'
+import { RetroGrid } from '@howell5/retro-grid'
 </script>
 ```
 
