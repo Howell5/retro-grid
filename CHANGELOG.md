@@ -1,5 +1,20 @@
 
 
+# [1.2.0](https://github.com/howell5/retro-grid/compare/v1.1.0...v1.2.0) (2024-12-18)
+
+
+### Features
+
+* add github page ([cebb1df](https://github.com/howell5/retro-grid/commit/cebb1df49676aa78a5870debc0bb607832b95a01))
+* add theme ([2260c5c](https://github.com/howell5/retro-grid/commit/2260c5c635490bac3a1834d86cf29c007c464283))
+* demo-dist ([5b27481](https://github.com/howell5/retro-grid/commit/5b27481b8ae5d20d00cc632fcabb824708b71fd9))
+* exports ([3969720](https://github.com/howell5/retro-grid/commit/3969720317720edd094f510554d0db7c77c95617))
+* remove private ([df2b807](https://github.com/howell5/retro-grid/commit/df2b807b1350bbef024fb3872f22d01bb7eeab5c))
+* remove tailwindcss ([e08b9ff](https://github.com/howell5/retro-grid/commit/e08b9ff69102d43f5fcc2ffc84e1d047567fb952))
+* update github url ([ea584c2](https://github.com/howell5/retro-grid/commit/ea584c26715d2e31f20b267e1e9a88be7b68214b))
+* update readme ([3f99151](https://github.com/howell5/retro-grid/commit/3f99151de5e3200b9e027122be36eb1b7acfd8bf))
+* use pnpm ([276e61d](https://github.com/howell5/retro-grid/commit/276e61d9015e64b4760f479a8125327636242d2e))
+
 # 1.1.0 (2024-12-18)
 
 

@@ -6,7 +6,7 @@
     "email": "howell5@outlook.com",
     "url": "https://github.com/howell5"
   },
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "./dist/retro-grid.umd.js",
   "module": "./dist/retro-grid.es.js",
   "types": "./dist/types/index.d.ts",
