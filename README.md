@@ -1,14 +1,19 @@
 # Retro Grid
 
-A simple and customizable retro grid background component for Vue 3.
+A customizable retro grid background component for Vue 3 with built-in themes and advanced customization options.
 
 ## Features
 
-- 🎨 Customizable grid colors and angles
-- 🌓 Dark mode support
-- ✨ Optional neon glow effects
+- 🎨 Multiple built-in themes (Cyberpunk, Matrix, Vaporwave, etc.)
+- 🎯 Advanced customization mode
+- 🌈 Full color control with gradient support
+- ✨ Configurable neon glow effects
 - 📱 Fully responsive
 - 🔧 TypeScript support
+
+## Demo
+
+[Demo](https://howell5.github.io/retro-grid/)
 
 ## Installation
 
@@ -24,70 +29,83 @@ yarn add @howell5/retro-grid
 
 ```vue
 <template>
-  <RetroGrid />
+  <RetroGrid theme="cyberpunk" />
 </template>
 
 <script setup>
 import { RetroGrid } from '@howell5/retro-grid'
+import '@howell5/retro-grid/style.css'
 </script>
 ```
 
 ## Props
 
-| Prop           | Type   | Default              | Description                                           |
-| -------------- | ------ | -------------------- | ----------------------------------------------------- |
-| angle          | number | 65                   | Grid angle in degrees                                 |
-| lineColor      | string | 'rgba(0, 0, 0, 0.3)' | Grid line color (dark mode: rgba(255, 255, 255, 0.2)) |
-| glowSize       | number | 0                    | Glow effect size in pixels                            |
-| opacity        | number | 0.5                  | Grid opacity                                          |
-| bgGradientFrom | string | 'white'              | Background gradient start color (dark mode: black)    |
-| bgGradientTo   | string | 'transparent'        | Background gradient end color                         |
+| Prop           | Type   | Description                                                                  |
+| -------------- | ------ | ---------------------------------------------------------------------------- |
+| theme          | string | Predefined theme ('cyberpunk', 'matrix', 'vaporwave', 'classic', 'midnight') |
+| angle          | number | Grid angle in degrees (0-90)                                                 |
+| lineColor      | string | Grid line color (supports RGB/RGBA/HEX)                                      |
+| glowSize       | number | Neon glow effect size in pixels                                              |
+| opacity        | number | Grid line opacity (0-1)                                                      |
+| bgGradientFrom | string | Background gradient start color                                              |
+| bgGradientTo   | string | Background gradient end color                                                |
 
 ## Examples
 
-### Basic Grid
+### Using Themes
 
 ```vue
-<RetroGrid />
+<!-- Cyberpunk theme -->
+<RetroGrid theme="cyberpunk" />
+
+<!-- Matrix theme -->
+<RetroGrid theme="matrix" />
+
+<!-- Vaporwave theme -->
+<RetroGrid theme="vaporwave" />
 ```
 
-### Custom Angle
-
-```vue
-<RetroGrid :angle="45" />
-```
-
-### Cyberpunk Theme
+### Custom Configuration
 
 ```vue
 <RetroGrid
+  :angle="65"
   lineColor="rgba(255, 0, 255, 0.5)"
   :glowSize="5"
   :opacity="0.5"
-  bgGradientFrom="rgba(20, 0, 40, 0.8)"
-  bgGradientTo="rgba(0, 0, 0, 0)"
+  bgGradientFrom="#140028"
+  bgGradientTo="#000000"
 />
 ```
 
-### Neon Blue Theme
+### Theme Configuration Reference
 
-```vue
-<RetroGrid
-  lineColor="rgba(0, 255, 255, 0.5)"
-  :glowSize="5"
-  :opacity="0.5"
-  bgGradientFrom="rgba(0, 20, 40, 0.8)"
-  bgGradientTo="rgba(0, 0, 0, 0)"
-/>
-```
-
-## Dark Mode Support
-
-The component automatically adapts to dark mode when your app uses the 'dark' class on the html element. You can toggle dark mode using:
-
-```javascript
-// Toggle dark mode
-document.documentElement.classList.toggle('dark')
+```typescript
+// Built-in theme presets
+const themes = {
+  cyberpunk: {
+    lineColor: 'rgba(255, 0, 255, 0.5)',
+    glowSize: 5,
+    opacity: 0.5,
+    bgGradientFrom: '#140028',
+    bgGradientTo: '#000000',
+  },
+  matrix: {
+    lineColor: 'rgba(0, 255, 0, 0.5)',
+    glowSize: 3,
+    opacity: 0.4,
+    bgGradientFrom: '#001400',
+    bgGradientTo: '#000000',
+  },
+  vaporwave: {
+    lineColor: 'rgba(0, 255, 255, 0.5)',
+    glowSize: 4,
+    opacity: 0.6,
+    bgGradientFrom: '#2b0054',
+    bgGradientTo: '#000000',
+  },
+  // ... other themes
+}
 ```
 
 ## Development
@@ -96,12 +114,16 @@ document.documentElement.classList.toggle('dark')
 # Install dependencies
 pnpm install
 
-# Start development server
+# Start development server with demo page
 pnpm dev
 
 # Build for production
 pnpm build
 ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
