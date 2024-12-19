@@ -35,16 +35,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-type ThemePreset = 'cyberpunk' | 'matrix' | 'vaporwave' | 'classic' | 'midnight'
-
-interface ThemeConfig {
-  angle: number
-  lineColor: string
-  glowSize: number
-  opacity: number
-  bgGradientFrom: string
-  bgGradientTo: string
-}
+import type { ThemePreset, ThemeConfig, RetroGridProps } from '../types'
 
 const THEMES: Record<ThemePreset, ThemeConfig> = {
   cyberpunk: {
@@ -89,18 +80,7 @@ const THEMES: Record<ThemePreset, ThemeConfig> = {
   },
 }
 
-interface Props {
-  theme?: ThemePreset
-  // 保留自定义主题的能力
-  angle?: number
-  lineColor?: string
-  glowSize?: number
-  opacity?: number
-  bgGradientFrom?: string
-  bgGradientTo?: string
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<RetroGridProps>(), {
   theme: 'cyberpunk',
 })
 

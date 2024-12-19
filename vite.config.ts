@@ -7,7 +7,19 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
+      tsconfigPath: './tsconfig.build.json',
       insertTypesEntry: true,
+      include: ['src/**/*.ts', 'src/**/*.vue'],
+      exclude: ['src/**/__tests__/*'],
+      copyDtsFiles: true,
+      aliasesExclude: [/\.vue$/],
+      beforeWriteFile: (filePath, content) => ({
+        filePath,
+        content,
+      }),
+      afterBuild: () => {
+        // 可以在这里添加构建后的处理
+      },
     }),
   ],
   build: {
