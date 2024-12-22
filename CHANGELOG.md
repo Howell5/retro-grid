@@ -1,5 +1,18 @@
 
 
+## [1.2.3](https://github.com/howell5/retro-grid/compare/v1.2.0...v1.2.3) (2024-12-22)
+
+
+### Features
+
+* build type ([cab4a0e](https://github.com/howell5/retro-grid/commit/cab4a0ecc0532f47a043f231a3332ab689d3749e))
+* change name ([ffba21d](https://github.com/howell5/retro-grid/commit/ffba21dead18d1cc6b0ae72e3987dc8128da2a9e))
+* downgrade vue version ([28245c4](https://github.com/howell5/retro-grid/commit/28245c4f66ed93bae60e86acdeb9e76995de8af1))
+* remove useless code ([32173a0](https://github.com/howell5/retro-grid/commit/32173a067f846c9fba2295d9a39e565bbfddb835))
+* update readme ([01c7c7f](https://github.com/howell5/retro-grid/commit/01c7c7fd92c5c5d089f6ffd4ef80d472c5fcdafc))
+* update readme ([d16f992](https://github.com/howell5/retro-grid/commit/d16f99206da4aef83ed5c57ff7acffa9b13f0e22))
+* update repo url ([b183599](https://github.com/howell5/retro-grid/commit/b183599c43c38e934ae8bf075e6f741a75c8a7aa))
+
 # [1.2.0](https://github.com/howell5/retro-grid/compare/v1.1.0...v1.2.0) (2024-12-18)
 
 
