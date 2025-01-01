@@ -16,6 +16,7 @@ A customizable retro grid background component for Vue 3 with built-in themes an
 - 🔧 TypeScript support
 
 ## Demo
+<img width="1551" alt="image" src="https://github.com/user-attachments/assets/f775b7cc-a7c9-4f51-8cfb-8ecb6419fcba" />
 
 [Demo](https://howell5.github.io/retro-grid/)
 
