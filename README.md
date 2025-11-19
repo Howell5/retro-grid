@@ -1,7 +1,7 @@
 # Retro Grid
 
-[![npm version](https://img.shields.io/npm/v/retro-grid.svg)](https://www.npmjs.com/package/retro-grid)
-[![npm downloads](https://img.shields.io/npm/dm/retro-grid.svg)](https://www.npmjs.com/package/retro-grid)
+[![npm version](https://img.shields.io/npm/v/retro-grid-vue.svg)](https://www.npmjs.com/package/retro-grid-vue)
+[![npm downloads](https://img.shields.io/npm/dm/retro-grid-vue.svg)](https://www.npmjs.com/package/retro-grid-vue)
 [![license](https://img.shields.io/npm/l/express.svg)]()
 
 A customizable retro grid background component for Vue 3 with built-in themes and advanced customization options.
@@ -23,11 +23,11 @@ A customizable retro grid background component for Vue 3 with built-in themes an
 ## Installation
 
 ```bash
-npm install retro-grid
+npm install retro-grid-vue
 # or
-pnpm add retro-grid
+pnpm add retro-grid-vue
 # or
-yarn add retro-grid
+yarn add retro-grid-vue
 ```
 
 ## Basic Usage
@@ -38,8 +38,8 @@ yarn add retro-grid
 </template>
 
 <script setup>
-import { RetroGrid } from 'retro-grid'
-import 'retro-grid/style.css'
+import { RetroGrid } from 'retro-grid-vue'
+import 'retro-grid-vue/style.css'
 </script>
 ```
 

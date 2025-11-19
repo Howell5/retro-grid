@@ -26,7 +26,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'RetroGrid',
-      fileName: (format) => `retro-grid.${format}.js`,
+      fileName: (format) => `retro-grid-vue.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],
@@ -36,7 +36,7 @@ export default defineConfig({
         },
         assetFileNames: (info) => {
           if (info.name === 'style.css') {
-            return 'retro-grid.css'
+            return 'retro-grid-vue.css'
           }
           return info.name || ''
         },

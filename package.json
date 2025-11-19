@@ -1,14 +1,14 @@
 {
-  "name": "retro-grid",
+  "name": "retro-grid-vue",
   "type": "module",
   "author": {
     "name": "howell5",
     "email": "howell5@outlook.com",
     "url": "https://github.com/howell5"
   },
-  "version": "1.2.3",
-  "main": "./dist/retro-grid.umd.js",
-  "module": "./dist/retro-grid.es.js",
+  "version": "2.0.0",
+  "main": "./dist/retro-grid-vue.umd.js",
+  "module": "./dist/retro-grid-vue.es.js",
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
@@ -29,10 +29,10 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/retro-grid.umd.js",
-      "import": "./dist/retro-grid.es.js"
+      "require": "./dist/retro-grid-vue.umd.js",
+      "import": "./dist/retro-grid-vue.es.js"
     },
-    "./style.css": "./dist/retro-grid.css"
+    "./style.css": "./dist/retro-grid-vue.css"
   },
   "scripts": {
     "dev": "vite",
